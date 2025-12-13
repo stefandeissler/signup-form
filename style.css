@@ -36,15 +36,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
+	Fonts
+*/
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa.woff2') format('woff2'),
+        url('Comfortaa.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
 	Styles
 */
 
 :root {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
-	--light-bg: rgb(255, 255, 240);
+	--light-bg: #e3e3e3;
 
 	--light-fg: white;
+
+  --shadow: #343434;
 }
 
 body {
@@ -83,7 +98,7 @@ img {
 	top:  40%;
 	width: 120%;
   left: -10%;
-	height: 4rem;
+	height: 3rem;
 	background-color: var(--dark-bg-translucent);
   display: flex;
   flex-direction: row;
@@ -98,6 +113,18 @@ img {
 .logo-container > svg {
   color: white;
   margin: auto 0;
+}
+
+.logo-container > span {
+  font-family: Comfortaa;
+  font-size: 1.4rem;
+  scale: 1 0.8;
+  font-weight: 900;
+  text-shadow: 0.1rem 0.1rem var(--shadow);
+}
+
+.logo-container > svg {
+  filter: drop-shadow(0.1rem 0.1rem var(--shadow));
 }
 
 .attribution {
