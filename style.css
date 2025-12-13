@@ -120,11 +120,11 @@ img {
   font-size: 1.4rem;
   scale: 1 0.8;
   font-weight: 900;
-  text-shadow: 0.1rem 0.1rem var(--shadow);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--shadow);
 }
 
 .logo-container > svg {
-  filter: drop-shadow(0.1rem 0.1rem var(--shadow));
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--shadow));
 }
 
 .attribution {
