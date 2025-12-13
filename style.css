@@ -55,11 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 :root {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
-	--light-bg: #e3e3e3;
+  --light-bg: #e3e3e3;
+  --light-bg-translucent: #3b59dd77;
+	
+	--light-fg: #ffffff;
 
-	--light-fg: white;
-
-  --shadow: #343434;
+  --shadow: #1f1f1f;
 }
 
 body {
@@ -83,7 +84,7 @@ a {
 }
 
 .image-container {
-	flex: 1 0 200px;
+	flex: 0 0 400px;
 	position: relative;
   overflow: hidden;
 }
@@ -91,6 +92,7 @@ a {
 img {
 	height: 100%;
 	object-fit: cover;
+  filter: blur(1px) sepia(45%) brightness(1.2);
 }
 
 .logo-container {
@@ -99,28 +101,28 @@ img {
 	width: 120%;
   left: -10%;
 	height: 3rem;
-	background-color: var(--dark-bg-translucent);
+	background-color: var(--light-bg-translucent);
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5px;
   box-shadow: 
-    0 0.5rem 0.7rem var(--dark-bg-translucent),
-    0 -0.5rem 0.7rem var(--dark-bg-translucent);
+    0 0.5rem 0.7rem var(--light-bg-translucent),
+    0 -0.5rem 0.7rem var(--light-bg-translucent);
 }
 
 .logo-container > span,
 .logo-container > svg {
-  color: white;
+  color: var(--light-fg);
   margin: auto 0;
 }
 
 .logo-container > span {
   font-family: Comfortaa;
-  font-size: 1.4rem;
-  scale: 1 0.8;
+  font-size: 2rem;
+  scale: 1 1.6;
   font-weight: 900;
-  text-shadow: 0.1rem 0.1rem 0.1rem var(--shadow);
+  text-shadow: 0.1rem 0.1rem 0.15rem var(--shadow);
 }
 
 .logo-container > svg {
@@ -138,6 +140,6 @@ img {
 }
 
 .form-container {
-	flex: 1 0 400px;
+	flex: 0 0 600px;
 	background-color: var(--light-bg);
 }
