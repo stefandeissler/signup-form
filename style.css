@@ -55,8 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 :root {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
-  --light-bg: #e3e3e3;
-  --light-bg-translucent: #2042dbaa;
+  --light-bg: #fafafa;
+  --light-bg-translucent: #1035d6aa;
+  --light-bg-translucent2: #1035d655;
 	
 	--light-fg: #ffffff;
 
@@ -81,6 +82,7 @@ a {
 	justify-content: start;
 	margin: 0 auto;
 	display: flex;
+  background-color: var(--light-bg);
 }
 
 .image-container {
@@ -92,12 +94,12 @@ a {
 img {
 	height: 100%;
 	object-fit: cover;
-  filter: blur(1px) sepia(0.7) brightness(1.2) saturate(0.7);
+  filter: blur(1px) sepia(1) brightness(1.2) saturate(0.7);
 }
 
 .logo-container {
 	position: absolute;
-	top:  40%;
+	top:  38%;
 	width: 120%;
   left: -10%;
 	height: 3rem;
@@ -141,5 +143,22 @@ img {
 
 .form-container {
 	flex: 0 0 600px;
-	background-color: var(--light-bg);
+	background-color: var(--light-bg-translucent2);
+  font-family: Helvetica, sans-serif;
+  padding: 5rem 0 0 0;
+}
+
+header, form, footer {
+  background-color: var(--light-bg);
+  margin: 2rem 2rem 4rem 2rem;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.15;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 800;
 }
