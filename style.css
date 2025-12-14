@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
   --light-bg: #e3e3e3;
-  --light-bg-translucent: #3b59dd77;
+  --light-bg-translucent: #2042dbaa;
 	
 	--light-fg: #ffffff;
 
@@ -92,7 +92,7 @@ a {
 img {
 	height: 100%;
 	object-fit: cover;
-  filter: blur(1px) sepia(45%) brightness(1.2);
+  filter: blur(1px) sepia(0.7) brightness(1.2) saturate(0.7);
 }
 
 .logo-container {
@@ -120,7 +120,7 @@ img {
 .logo-container > span {
   font-family: Comfortaa;
   font-size: 2rem;
-  scale: 1 1.5;
+  scale: 1 1.4;
   font-weight: 900;
   text-shadow: 0.1rem 0.1rem 0.15rem var(--shadow);
 }
