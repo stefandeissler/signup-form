@@ -170,10 +170,6 @@ header, form {
   font-weight: 700;
 }
 
-header {
-  margin: 0 0 2rem 0;
-}
-
 .form-row {
   display: flex;
   gap: 3rem;
