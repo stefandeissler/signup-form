@@ -146,6 +146,7 @@ img {
 	background-color: var(--light-bg-translucent2);
   font-family: Helvetica, sans-serif;
   padding: 5rem 0 0 0;
+  font-family: Calibri, "Segue UI", sans-serif;
 }
 
 header, form, footer {
