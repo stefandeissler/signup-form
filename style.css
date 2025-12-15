@@ -56,8 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
   --light-bg: #fafafa;
-  --light-bg-translucent: #1035d6aa;
-  --light-bg-translucent2: #1035d655;
+  --light-bg-translucent: #7386e27e;
+  --light-bg-translucent2: #9fabe455;
 	
 	--light-fg: #ffffff;
 
@@ -122,13 +122,14 @@ img {
 .logo-container > span {
   font-family: Comfortaa;
   font-size: 2rem;
-  scale: 1 1.4;
+  scale: 1 1.2;
   font-weight: 900;
   text-shadow: 0.1rem 0.1rem 0.15rem var(--shadow);
 }
 
 .logo-container > svg {
   filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--shadow));
+  scale: 1 1.2;
 }
 
 .attribution {
