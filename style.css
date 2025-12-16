@@ -188,6 +188,24 @@ label {
   font-size: 1rem;
 }
 
+input {
+  font-family: inherit;
+  font-weight: 300;
+  min-width: 150px;
+  padding: 0;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  outline: 0.1rem solid var(--light-bg2-translucent);
+  box-shadow: 0.2rem 0.2rem 0.5rem darkgrey;
+}
+
+#password:invalid,
+#confirm_password:invalid {
+  border: 1px solid red;
+}
+
 footer {
   display: flex;
   flex-direction: column;
