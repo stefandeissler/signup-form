@@ -56,12 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 	--dark-bg: #343434;
 	--dark-bg-translucent: #34343477;
   --light-bg: #fafafa;
-  --light-bg2: #7386e2;
-  --light-bg2-translucent: #7385e2af;
-  --light-bg-translucent: #425cdd65;
-  --light-bg-translucent2: #9faae460;
+  --sky-bg: #7386e2;
+  --sky-bg2: #899be2;
+	--sky-bg-translucent: #7385e270;
 	
-	--light-fg: #ffffff;
+  --light-fg: #ffffff;
 
   --shadow: #1f1f1f;
 }
@@ -84,7 +83,8 @@ a {
 	justify-content: start;
 	margin: 0 auto;
 	display: flex;
-  background-color: var(--light-bg);
+  background-color: var(--dark-bg);
+  gap: 0;
 }
 
 .image-container {
@@ -95,6 +95,7 @@ a {
 
 img {
 	height: 100%;
+  width: auto;
 	object-fit: cover;
   filter: blur(1px) sepia(1) brightness(1.2) saturate(0.7);
 }
@@ -105,14 +106,14 @@ img {
 	width: 120%;
   left: -10%;
 	height: 3rem;
-	background-color: var(--light-bg-translucent);
+	background-color: var(--sky-bg-translucent);
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5px;
   box-shadow: 
-    0 0.5rem 0.7rem var(--light-bg-translucent),
-    0 -0.5rem 0.7rem var(--light-bg-translucent);
+    0 0.5rem 0.7rem var(--sky-bg-translucent),
+    0 -0.5rem 0.7rem var(--sky-bg-translucent);
 }
 
 .logo-container > span,
@@ -146,14 +147,14 @@ img {
 
 .form-container {
 	flex: 0 0 600px;
-	background-color: var(--light-bg-translucent2);
+	background-color: var(--sky-bg2);
   font-family: Helvetica, sans-serif;
   padding: 5rem 0 0 0;
   font-family: Calibri, "Segue UI", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  height: 100%;
 }
 
 header, form, footer {
@@ -164,6 +165,8 @@ header, form, footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+  border: none;
 }
 
 header, form {
@@ -193,11 +196,11 @@ input {
   font-weight: 300;
   min-width: 150px;
   padding: 0;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #bdbfc4;
 }
 
 input:focus {
-  outline: 0.1rem solid var(--light-bg2-translucent);
+  outline: 0.1rem solid var(--sky-bg2);
   box-shadow: 0.2rem 0.2rem 0.5rem darkgrey;
 }
 
@@ -217,7 +220,7 @@ footer {
 button {
   width: 15rem;
   height: 3rem;
-  background-color: var(--light-bg2);
+  background-color: var(--sky-bg);
   color: var(--light-fg);
   font-size: 1.2rem;
   font-weight: 700;
@@ -227,10 +230,10 @@ button {
 }
 
 button:hover {
-  background-color: var(--light-bg2-translucent);
+  background-color: var(--sky-bg2);
 }
 
 footer a {
   text-decoration: none;
-  color: var(--light-bg2);
+  color: var(--sky-bg);
 }
