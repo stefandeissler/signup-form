@@ -205,7 +205,7 @@ input {
   background-color: white;
 }
 
-input:invalid {
+input:user-invalid {
   border: 0.1rem dashed red;
 }
 
