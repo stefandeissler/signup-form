@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   --light-bg: #fafafa;
   --sky-bg: #7386e2;
   --sky-bg2: #899be2;
-	--sky-bg-translucent: #7385e270;
+	--sky-bg-translucent: #7385e280;
 	
   --light-fg: #ffffff;
 
@@ -74,6 +74,7 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+  justify-content: start;
 }
 
 a {
@@ -82,24 +83,26 @@ a {
 }
 
 #page-container {
-	height: 95%;
-	max-width: 80%;
-	justify-content: start;
-	margin: 0 auto;
+  align-self: center;
+  min-height: 95vh;
+	width: 1000px;
+  margin: 0;
 	display: flex;
   background-color: var(--dark-bg);
   gap: 0;
 }
 
 .image-container {
-	flex: 0 0 400px;
+	flex: 1 1 400px;
+  height: 100%;
+  width: 100%;
 	position: relative;
   overflow: hidden;
 }
 
 img {
 	height: 100%;
-  width: auto;
+  width: 100%;
 	object-fit: cover;
   filter: blur(1px) sepia(1) brightness(1.2) saturate(0.7);
 }
@@ -150,7 +153,7 @@ img {
 }
 
 .form-container {
-	flex: 0 0 600px;
+	flex: 1 1 600px;
 	background-color: var(--sky-bg2);
   font-family: Helvetica, sans-serif;
   padding: 5rem 0 0 0;
